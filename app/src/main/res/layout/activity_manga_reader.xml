@@ -6,41 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MangaReaderActivity">
 
-    <com.example.mangareader.zoom.ZoomImageView
-        android:id="@+id/readerImg"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        android:layout_height="match_parent"
-        android:layout_width="match_parent"
-        android:background="#000000">
-    </com.example.mangareader.zoom.ZoomImageView>
+    <include layout="@layout/bar_manga_reader" android:id="@+id/manga_bar" />
 
-    <LinearLayout
+    <com.example.mangareader.zoomphoto.ZoomPhotoView
+        android:id="@+id/readerImg"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <com.example.mangareader.controls.TouchToggleView
-            android:id="@+id/controlsLeftImg"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#00000000"
-            app:toggleDirection="left" />
-
-        <com.example.mangareader.controls.TouchToggleView
-            android:id="@+id/controlsRghtImg"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
-            android:background="#00000000"
-            app:toggleDirection="right" />
-    </LinearLayout>
-
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>

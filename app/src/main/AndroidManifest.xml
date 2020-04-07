@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MangaReaderActivity">
+        <activity android:name=".MangaReaderActivity"
+            android:theme="@style/AppThemeNoTitle">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

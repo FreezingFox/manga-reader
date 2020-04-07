@@ -1,7 +1,6 @@
 package com.example.mangareader.controls
 
 import android.content.Context
-import android.content.res.TypedArray
 import android.os.Build
 import android.util.AttributeSet
 import android.view.MotionEvent
@@ -9,7 +8,6 @@ import android.view.View
 import androidx.annotation.RequiresApi
 import androidx.core.view.GestureDetectorCompat
 import com.example.mangareader.R
-import com.example.mangareader.zoom.ZoomGestureListener
 
 
 class TouchToggleView: View {
